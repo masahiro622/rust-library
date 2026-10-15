@@ -1,0 +1,2 @@
+// x+y<y+xでの比較関数(format!より高速)
+|a, b| a.bytes().chain(b.bytes()).cmp(b.bytes().chain(a.bytes()))

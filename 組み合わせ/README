@@ -1,0 +1,17 @@
+nCk_modm(n~10^18)
+ nCk mod m (m is not necessarily prime)
+ 前処理 O(m) クエリ O(p log n) p: mの素因数　くらい？
+ n < 10^18,  m <= 10^6
+ 2*10^5 回程度のクエリまでなら間に合う
+
+nCm(O(n^2))
+    nCk mod m (m is prime)
+    前処理 O(n^2) クエリ O(1)
+    n < 10^4,  m <= 10^18
+    10^5 回程度のクエリまでなら間に合う
+
+modint
+    nCk mod p (p is prime)
+    前処理 O(n) クエリ O(1)
+    n < 10^7,  p <= 10^18
+    10^5 回程度のクエリまでなら間に合う
